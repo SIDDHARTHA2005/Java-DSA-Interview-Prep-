@@ -79,7 +79,13 @@ public class leetCode{
 
         while (start <= end) {
             int mid = start + (end - start)/2;
-            
+            if (letters[mid] <= target) {
+                start = mid + 1;
+            } else {
+                end = mid - 1;
+            }
         }
+        // If start is out of bounds, wrap around to the first letter
+        return letters[start % letters.length];
     }
 }
