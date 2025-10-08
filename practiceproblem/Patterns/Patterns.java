@@ -9,7 +9,7 @@ public class Patterns {
 static void pattern1(int n){
     for(int i = 1; i <= n; i++){               // rows       *
         for(int j = 1; j <= i; j++){           // columns    * *
-            System.out.print("* ");            //            * * *
+            System.out.print("* ");          //            * * *
         }                                      //            * * * *
         System.out.println();
         }

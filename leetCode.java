@@ -22,6 +22,7 @@ public class leetCode {
         }
         return count;
     }
+
     static boolean even(int num){                       // return true or false whether the number is even digit or not
         int numberOfDigits = digits(num);
         return numberOfDigits % 2 == 0;
