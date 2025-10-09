@@ -1,6 +1,7 @@
 package dsa.BinarySearchAlgo.leetcode;
 
-public class ProblemNumber852 {     
+public class ProblemNumber162 {
+       
     public static void main(String[] args) {
         int[] arr = {1, 2, 4, 7, 9, 13, 16, 2};
         int ans = highestNumber(arr);
