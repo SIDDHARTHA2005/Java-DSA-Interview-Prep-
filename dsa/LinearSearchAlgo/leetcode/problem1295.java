@@ -9,19 +9,19 @@ public class problem1295 {
     static int findNumbers(int[] nums){                 // finds and returns the how many even digit numbers are there in an array
         int count = 0;
         for(int num : nums){
-            if(even(num)){
+            if(even(num)){                              // it finds and returns how many even numbers are there in an array
                 count++;
             }
         }
         return count;
     }
 
-    static boolean even(int num){
+    static boolean even(int num){               // find is it even or odd and return even value as true
         int numOfDigits = digits(num);
         return numOfDigits % 2 == 0;
     }
 
-    static int digits(int num){
+    static int digits(int num){             // count number of digits 
         int count = 0;
         while(num > 0){
             count++;
