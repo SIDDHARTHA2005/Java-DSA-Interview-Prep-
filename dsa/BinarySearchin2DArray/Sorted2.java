@@ -3,9 +3,9 @@ package dsa.BinarySearchin2DArray;
 public class Sorted2 {
     public static void main(String[] args) {
      int[][] arr =  new int[][]{
-        {1,2,3,4,5},
-        {15,16,17,18,20},
-        {19,110,111,112}
+        {1,2,3,4},
+        {15,16,17,18},
+        {19,110,111,118}
     }; 
     int target = 112;   
     System.out.println(search(arr, target));

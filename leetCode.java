@@ -94,6 +94,7 @@ public class leetCode{
 
 */
 
+/*
 public class leetCode {
     public static void main(String[] args) {
         int[] nums = {-1,0,2,4,6,8};
@@ -116,5 +117,27 @@ public class leetCode {
             }
         }
         return start;
+    }
+}
+*/
+
+public class leetCode {
+    public static void main(String[] args) {
+        int x = 121;
+        System.out.println(isPalindrome(x));
+    }
+    static boolean isPalindrome(int x){
+        if(x < 0){
+            return false;
+        }
+        int num = x;
+        int res = 0;
+
+        while(x > 0){
+            res = res * 10 + (x % 10);
+            x = x/10;
+        }
+
+        return num == res;
     }
 }
