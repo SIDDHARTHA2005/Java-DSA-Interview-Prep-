@@ -26,7 +26,7 @@ class ProblemNumber410{
         }
         return left;
     }
-    static int requiredPieces(int[] nums, long cap){
+    int requiredPieces(int[] nums, long cap){
         int pieces = 1;
         long sum = 0;
         for(int n : nums){

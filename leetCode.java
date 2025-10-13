@@ -68,6 +68,7 @@ public class leetCode {
 }
 */
 
+/*
 //Problem Number 744
 public class leetCode{
     public static void main(String[] args) {
@@ -88,5 +89,32 @@ public class leetCode{
         }
         // If start is out of bounds, wrap around to the first letter
         return letters[start % letters.length];
+    }
+}
+
+*/
+
+public class leetCode {
+    public static void main(String[] args) {
+        int[] nums = {-1,0,2,4,6,8};
+        int target = 10;
+        System.out.println(searchInsert(nums,target));
+    }
+    static int searchInsert(int[] nums, int target) {
+        int start = 0;
+        int end = nums.length - 1;
+
+        while(start <= end){
+            int mid = start + (end - start)/2;
+            
+            if(target == nums[mid]){
+                return mid;
+            } else if(target < nums[mid]){
+                end = mid - 1;
+            } else {
+                start = mid + 1;
+            }
+        }
+        return start;
     }
 }
