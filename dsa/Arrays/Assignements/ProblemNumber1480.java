@@ -1,7 +1,5 @@
 package dsa.Arrays.Assignements;
-
 import java.util.Arrays;
-
 public class ProblemNumber1480 {
     public static void main(String[] args) {
         int[] nums = {1,2,3,4};
