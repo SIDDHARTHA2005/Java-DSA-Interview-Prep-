@@ -5,6 +5,7 @@ public class Fibonacci {
         System.out.println(fib(6));
     }
     static int fib(int n){
+        // basse condition
         if(n < 2){
             return n;
         }
