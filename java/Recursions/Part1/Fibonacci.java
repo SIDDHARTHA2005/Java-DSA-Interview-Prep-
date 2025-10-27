@@ -2,10 +2,16 @@ package Recursions.Part1;
 
 public class Fibonacci {
     public static void main(String[] args) {
-        System.out.println(fib(6));
+        // System.out.println(fib(60));
+        System.out.println(fibFormula(50));
     }
+
+    static int fibFormula(int n){
+        return (int) (Math.pow((1 + Math.sqrt(5)/2), n) / Math.sqrt(5));
+    }
+
     static int fib(int n){
-        // basse condition
+        // base condition
         if(n < 2){
             return n;
         }
