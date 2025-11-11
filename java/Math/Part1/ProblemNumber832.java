@@ -17,9 +17,9 @@ public class ProblemNumber832 {
         for(int[] row : image){
             // reverse the array
             for(int i = 0; i < (image[0].length + 1) / 2; i++){
-                // swap
+                // swap and invert
                 int temp = row[i] ^ 1;
-                row[i] = row[image[0].length - 1 - i];
+                row[i] = row[image[0].length - 1 - i] ^ 1;
                 row[image[0].length - 1 - i] = temp;
             }
         }

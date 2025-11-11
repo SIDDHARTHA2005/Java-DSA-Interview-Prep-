@@ -2,13 +2,13 @@ package dsa.Sorting.Leetcode.Practice;
 
 public class ProblemNumber41 {
     public static void main(String[] args) {
-        int[] nums = {7,8,9,11,12};
+        int[] nums = {2, 1, 3, 0};
         System.out.println(firstMissingPositive(nums));
     }
     public static int firstMissingPositive(int[] nums) {
         int i = 0;
         while(i < nums.length){
-            int correctpos = nums[i] - 1;
+            int correctpos = nums[i] - 1;       // correct position of the current element
                 if(nums[i] > 0 && nums[i] < nums.length && nums[i] != nums[correctpos]){
                 swap(nums, i, correctpos);
                 } else {

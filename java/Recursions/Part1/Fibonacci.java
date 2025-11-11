@@ -2,8 +2,8 @@ package Recursions.Part1;
 
 public class Fibonacci {
     public static void main(String[] args) {
-        // System.out.println(fib(60));
-        System.out.println(fibFormula(50));
+        System.out.println(fib(3));
+        // System.out.println(fibFormula(50));
     }
 
     static int fibFormula(int n){
